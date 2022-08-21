@@ -1,0 +1,936 @@
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 91px;
+}
+body {
+    font-family: 'Questrial', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+  }
+  h1, h2, h3, h4, h5, h6, p {
+    color: #191d34;
+    font-family: 'Questrial', sans-serif;
+  }
+  p {
+    color: #000;
+    line-height: 1.2;
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
+  @font-face{
+  font-family: 'Rajdhani', sans-serif;
+  src:url(../fonts/Rajdhani-Light.ttf);
+  font-weight:300;
+  }
+  @font-face{
+    font-family: 'Rajdhani', sans-serif;
+    src:url(../fonts/Rajdhani-Regular.ttf);
+    font-weight:400;
+  }
+  @font-face{
+    font-family: 'Rajdhani', sans-serif;
+    src:url(../fonts/Rajdhani-Medium.ttf);
+    font-weight:500;
+  }
+  @font-face{
+    font-family: 'Rajdhani', sans-serif;
+    src:url(../fonts/Rajdhani-SemiBold.ttf);
+    font-weight:600;
+  }
+  @font-face{
+    font-family: 'Rajdhani', sans-serif;
+    src:url(../fonts/Rajdhani-Bold.ttf);
+    font-weight:700;
+  }
+  input:hover, input:focus {
+    outline: none !important;
+  }
+  button.navbar-toggler:hover {
+    background: none!important;
+    border: none!important;
+  }
+  a {
+    text-decoration: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  a:hover {
+    color: #ff7e5f;
+    text-decoration: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }  
+  b,
+  sup,
+  sub,
+  u,
+  del {
+    color: #fe5c24;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  h5 {
+    font-size: 16px;
+  }
+  h6 {
+    font-size: 14px;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2em;
+  }
+  img {
+    max-width: 100%;
+  }
+  a:focus, .button:focus, button:focus, .btn:focus {
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .z_index {
+    z-index: 9 !important;
+    position: relative;
+  }
+  .button {
+    display: inline-block;
+    border: 1px solid transparent;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 12px 54px;
+    border-radius: 4px;
+    color: #fff;
+    border: 1px solid #fdcb9e;
+    text-transform: uppercase;
+    background-color: #fe5c24;
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  /* Header */
+  header{
+  z-index: 997;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  }
+  .main_menu_iner{
+  background: #000000;
+  opacity: 0.8;
+}
+  .main_menu .navbar-brand {
+    padding-top: 0;
+  }
+  .main_menu .navbar {
+    padding: 0px;
+  }
+  .logo {
+    width: 100px;
+}
+  /* .main_menu .main-menu-item {
+    text-align: right !important;
+    justify-content: right;
+  } */
+  .main_menu .main-menu-item ul li .nav-link {
+    font-size: 14px;
+    padding: 15px 15px;
+  }
+  .main_menu .main-menu-item ul li .nav-link:hover {
+    color: #e85a29!important;
+  }
+  .menu_fixed {
+    position: fixed;
+    z-index: 9999 !important;
+    width: 100%;
+    /* background-color: #fff; */
+    /* box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05); */
+    background: #000000;
+    top: 0;
+  }
+  .menu_fixed .navbar-brand img {
+    max-width: 150px;
+  }
+  /* .menu_fixed .main-menu-item ul li .nav-link {
+    padding: 25px 25px;
+  } */
+  .menu_fixed span {
+    color: #000 !important;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  .dropdown .dropdown-menu {
+    transition: all 0.5s;
+    overflow: hidden;
+    transform-origin: top center;
+    transform: scale(1, 0);
+    display: block;
+    margin-top: 0px;
+    border: 0px solid rgba(0, 0, 0, 0.15) !important;
+    background-color: #fafafa;
+  }
+  .dropdown:hover .dropdown-menu {
+    transform: scale(1);
+  }
+  input:focus {
+    outline-offset: 0px;
+  }
+  .form-control:focus {
+    box-shadow: 0 0 0 0rem;
+  }
+  .dropdown .dropdown-menu {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .mr10{
+    margin-right:10px;
+}
+.tc{
+    text-align: center;
+}
+.pt70{
+    padding-top: 70px;
+}
+.pb70{
+    padding-bottom: 70px;    
+}
+.pt30{
+    padding-top: 30px;
+}
+.pb30{
+    padding-bottom: 30px;    
+}
+/****************Header-section*************/
+.navbar-collapse ul li a {
+  color: #da2a82!important;
+}
+.navbar-nav {
+  align-items: center;
+}
+.request-btn {
+  border: 2px solid #da2a82;
+}
+.request-btn a {
+  color: #9f29bd;
+  border-radius: 0;
+  margin: 0;
+  padding: 0 8px!important;
+  font-size: 13px;
+}
+/****************Banner-section*************/
+.banner_part {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../images/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: initial;
+  z-index: 1;
+}
+.banner_part .banner_text {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 55px;
+}
+.banner_part .banner_text h1 {
+  font-size: 45px;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  color: #fff;
+  letter-spacing: 4px;
+}
+.banner_part .banner_text h1 span {
+  color: #fff;
+  text-shadow: 2px 2px 5px #ffffff;
+}
+.banner_part .banner_text p {
+  color: #fff;
+  padding: 10px 50px;
+}
+.banner-btn ul li {
+  display: inline-block;
+}
+.banner-btn ul li:first-child {
+  color: #e85a29;
+  margin-right: 22px;
+}
+.banner-btn ul li:last-child {
+  color: #da2a82;
+}
+.banner-news ul li{
+  display: inline-block;
+}
+.banner-news ul li img {
+  width: 80%;
+}
+.banner-news {
+  margin-top: 90px;
+}
+.webpro-desc {padding: 22px 90px;}
+.webpro-desc p {
+    color: #fff;
+    font-size: 14px;
+}
+.webpro-desc p span{
+color: #da2a82;
+margin-right: 2px;
+}
+.suite{
+  text-align: center;
+  padding-bottom: 70px;
+}
+.suite .heading {
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.suite .nftpro h1, .geer h1, .naas h1 {
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.suite .row {
+  align-items: flex-start!important;
+}
+.suite .title {
+    text-align: center;
+    padding-top: 5px;
+}
+.suite .para {
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 13px;
+  height: 150px;
+}
+.suite .btn {
+  color: #fff;
+  border-radius: 0;
+  margin-top: 30px;
+  padding: 5px 30px;
+  font-size: 13px;
+}
+.suite .nftpro .title {
+  color: #9f29bd;
+}
+.suite .nftpro .btn {
+    border: 1px solid #9f29bd;
+}
+.suite .geer .title {
+  color: #da2a82!important
+}
+.suite .geer .btn {
+  border: 1px solid #da2a82;
+}
+.suite .naas .title {
+  color: #f5911c!important
+}
+.suite .naas .btn {
+  border: 1px solid #f5911c;
+}
+/****************Company-section*************/
+.our-company-heading{
+  background-color: #01193f;
+  margin-top: -100px;
+}
+.our-company {
+  background-color: #01163a;
+  padding-bottom: 50px;
+}
+.company-heading h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  margin: 130px 0 30px 0;
+}
+.light-image{
+  margin-top: -368px;
+}
+.why {
+  background: #000;
+  padding: 132px 0 0px 0;
+  margin-top: -103px;
+}
+.why .nft-content h1 {
+  color: #fff;
+}
+.why .nft-content p {
+  color: #fff;
+  font-size: 14px;
+  padding-top: 10px;
+  line-height: 18px;
+}
+.why .nft-image img {
+  width: 80%;
+}
+.why .video-link p {
+  color: #e85a29;
+  text-align: right;
+}
+.why .video-link p.link{
+  width: 42%;
+  margin-left: auto;
+}
+.why .video-link {
+  padding-top: 50px;
+}
+.follow-btn{
+  border: 1px solid #da2a82;
+  border-radius: 0;
+  margin-top: 0px;
+  padding: 0px 3px;
+  text-align: center;
+  width: 100px;
+}
+.radiant{
+  height: 4px;
+  background: linear-gradient(90deg, rgba(232,90,41,1) 0%, rgba(159,41,189,1) 100%);
+}
+.web-footer {
+  background: #0b0b0b;
+}
+.footer-logo {
+  text-align: center;
+  padding: 50px 0;
+}
+.footer-logo img {width: 22%;}
+.footer-link h4 {
+  color: #fff;
+  font-size: 16px;
+}
+.footer-link p {
+  font-size: 12px;
+  line-height: 25px;
+  color: #fff;
+}
+.footer-link.email a {
+  color: #fff;
+}
+.footer-link input {
+  padding-left: 5px;
+  padding-top: 3px;
+  font-size: 13px;
+  margin-top: 5px;
+  margin-bottom: 13px;
+}
+.footer-link.social {
+  text-align: center;
+}
+.footer-link.social ul li a {
+  color: #fff;
+  font-size: 25px;
+}
+.follow-btn .btn {
+  color: #da2a82;
+  padding: 0;
+  font-size: 13px;
+}
+.footer-copyright p {
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+  padding: 30px 0 40px 0;
+}
+.footer-copyright sup {
+  color: #fff;
+}
+/* banner */
+/* .banner_text.text-center {
+    padding-top: 100px;
+} */
+.nftpro-ban {
+  background-image: url(../images/nft-ban.png);
+  overflow: unset;
+  z-index: 2;
+}
+.nasa-ban{
+  background-image: url(../images/nasa-ban.png);
+}
+.nasa-ban .nft-title {
+  font-size: 30px!important;
+}
+.nasa-ban p {
+  font-size: 14px;
+}
+.nasa-ban p b{
+  color: #fff;
+}
+.nftpro-ban .banner_img {
+  position: absolute;
+  margin-top: 72px;
+}
+.nftpro-ban .banner_text {
+  padding-top: 130px;
+  padding-bottom: 50px;
+}
+.nftpro-ban ul li .btn{
+  color: #fff;
+  border-radius: 0;
+  margin-top: 30px;
+  padding: 5px 30px;
+  font-size: 13px;
+  border: 1px solid #9f29bd;
+}
+.nftpro-ban .nft-head {
+  font-size: 25px!important;
+  font-weight: bold;
+  padding-bottom: 18px!important;
+  letter-spacing: 0!important;
+}
+.nftpro-ban .nft-title {
+    letter-spacing: 0px!important;
+}
+.nftpro-ban p {
+    padding-left: 0!important;
+}
+.nftpro-ban ul li {
+    display: inline-block;
+}
+.nftpro-ban ul li button:first-child {
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.brand-market {
+  padding-top: 70px;
+  padding-bottom: 80px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../images/nft-girlban.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: initial;
+  z-index: 1;
+}
+.brand-market-girl h1{
+  font-size: 26px;
+  color: #9f29bd;
+}
+.brand-market-girl p {
+  font-size: 15px;
+  padding-right: 56px;
+}
+.brand-market-girl button{
+  font-size: 13px;
+  color: #000;
+  border: 2px solid #9f29bd;
+  border-radius: 0;
+  margin-top: 20px;
+}
+.nftpro-adv {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../images/nft-advban.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: initial;
+  z-index: 1;
+}
+.nftpro-adv h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 28px;
+  line-height: 30px;
+}
+.nftpro-adv p {
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+}
+.nftpro-adv-img {
+  margin-top: 40px;
+  text-align: center;
+}
+.nftpro-ease{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../images/nft-designban.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: initial;
+  z-index: 1;
+}
+.nftpro-ease h1 {
+  color: #fff;
+  text-align: left;
+  font-size: 28px;
+  line-height: 30px;
+}
+.nftpro-ease p {
+  font-size: 13px;
+  text-align: left;
+  color: #fff;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  line-height: 16px;
+}
+.nftpro-ease ul li{
+  color: #fff;
+}
+.nftpro-ease ul li::before {
+content: "\2022";
+    color: #9f29bd;
+    font-size: 15px;
+    margin-right: 12px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.nftpro-buleprint{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../images/nft-proban.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: initial;
+  z-index: 1;
+}
+.nftpro-buleprint h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 28px;
+  line-height: 30px;
+}
+.nftpro-buleprint h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 35px;
+}
+.nftpro-buleprint p {
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  line-height: 16px;
+}
+.nftpro-buleprint-img p {
+  font-size: 12px;
+  text-align: left;
+  color: #fff;
+  margin-top: -18px!important;
+  margin-left: 30px;
+  padding-bottom: 40px;
+  line-height: 12px;
+}
+.nftpro-shine{
+  padding-top: 70px;
+  padding-bottom: 100px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../images/nft-shineban.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: initial;
+  z-index: 1;
+}
+.nftpro-shine h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 28px;
+  line-height: 30px;
+}
+.nftpro-shine p {
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+  margin-top: 10px;
+  padding-bottom: 0px;
+  line-height: 16px;
+}
+.nftpro-shine-heading {
+  text-align: center;
+}
+.nftpro-shine .btn {
+  color: #fff;
+  border-radius: 0;
+  margin-top: 30px;
+  padding: 5px 30px;
+  font-size: 13px;
+  border: 1px solid #9f29bd;
+}
+.nftpro-table{
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+.nftpro-table-head h1{
+  color: #9f29bd;
+  text-align: center;
+  font-size: 28px;
+  line-height: 26px;
+  padding-bottom: 20px;
+}
+thead.blank tr th {
+  background: #6c0087!important;
+  color: #fff!important;
+}
+.table tr th:first-child {
+  color: #6c0087;
+  font-weight: bold;
+  background: #e69cff;
+}
+.table-bordered {
+  border: 2px solid #6c0087;
+}
+.table-bordered td, .table-bordered th {
+  border: 2px solid #6c0087!important;
+}
+.table th {
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  vertical-align: middle;
+  color: #6c0087;
+}
+.table thead tr th {
+  background: #e69cff;
+  vertical-align: middle;
+}
+table img {
+  max-width: none;
+  width: 30px;
+}
+.nasa-shine{
+  padding-top: 70px;
+  padding-bottom: 100px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../images/nasa-still.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: initial;
+  z-index: 1;
+}
+.nasa-shine .btn {
+  border: 1px solid #ff4110;
+}
+.nasa-use{
+  background-image: url(../images/nasa-use.png);
+  padding-top: 80px;
+    padding-bottom: 110px;
+}
+.nasa-use ul li::before{
+  color: #e85a29;
+}
+.nasa-platform ul li::before {
+  content: "\2022";
+  color: #e85a29;
+  font-size: 15px;
+  margin-right: 12px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.nasa-platform{
+  background-image: none!important;
+}
+.nasa-platform h1{
+  color: #e85a29;
+}
+.nasa-power{
+background: none!important;
+}
+.nasa-power h1{
+  color: #e85a29;
+  text-align: left;
+}
+.nasa-power p{
+  color: #000;
+  text-align: left;  
+  padding-right: 110px;
+}
+@media (max-width: 991px) {
+  .navbar-light .navbar-toggler-icon {
+    background-image: url(../images/toggle-bar.png);
+    width: 35px;
+    height: 24px;
+  }
+  .mobile-view .main_menu_iner {
+    background: #030203;
+    opacity: 1;
+}
+.mobile-view .desktop-logo{
+    display: none;
+  }
+  .mobile-view .navbar-nav{
+    height: 100vh;
+  }
+    .main_menu_iner {
+      padding: 10px 0px;
+    }
+    .navbar-light .navbar-toggler {
+      border-color: transparent;
+    }
+    .navbar-collapse {
+      z-index: 9999 !important;
+      position: absolute;
+      left: 0;
+      top: 48px;
+      width: 100%;
+      background-color: #030203;
+      text-align: center !important;
+    }
+    .dropdown .dropdown-menu {
+      transform: scale(1, 0);
+      display: none;
+    }
+    .dropdown:hover .dropdown-menu {
+      transform: scale(1);
+      display: block;
+    }
+    .main_menu .main-menu-item {
+      text-align: left !important;
+    }
+    .main_menu .main-menu-item .nav-item a {
+      padding: 8px 15px !important;
+    }
+}
+@media (min-width: 991px) {
+  .mobile-logo {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .main_menu .navbar-brand img {
+    max-width: 200px;
+  }
+  .banner_part {
+    height: 700px;
+    background-color: #f0eed4;
+  }
+  .banner_part .banner_text {
+    text-align: center;
+    padding-top: 0px;
+    height: 700px;
+  }
+  .banner_part .banner_text h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    line-height: 1.3;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .main_menu .navbar-brand img {
+    max-width: 200px;
+  }
+  /* .main_menu .main-menu-item ul li .nav-link {
+    padding: 35px 16px;
+  } */
+  .banner_part .banner_text {
+    height: 650px;
+  }
+  .banner_part .banner_text h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+  }
+}
+@media (max-width: 768px) {
+
+/* .main_menu .navbar {
+  justify-content: end;
+} */
+.footer-logo {
+  text-align: center;
+  padding: 30px 0;
+}
+  .footer-logo img {
+    width: 50%;
+}
+.footer-link {text-align: center;}
+.footer-link p {
+    line-height: 15px;
+    margin-bottom: 20px;
+}
+.follow-btn {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+.footer-link.social ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+.footer-copyright p {
+    padding: 15px 0 40px 0;
+}
+.nft-content{
+  text-align: center;
+}
+}
+@media (max-width: 576px) {
+  .banner_part {
+    height: 650px;
+    background-color: #f0eed4;
+  }
+  .main_menu .navbar-brand img {
+    max-width: 150px;
+  }
+  .banner_part .banner_text {
+    text-align: center;
+    padding-top: 0px;
+    height: 650px;
+  }
+  .banner_part .banner_text h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    line-height: 1.3;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  h2 {
+    font-size: 24px;
+    line-height: 25px;
+  }
+  .main_menu .navbar-brand img {
+    max-width: 200px;
+  }
+  .banner_part {
+    height: 650px;
+    background-color: #f0eed4;
+  }
+  .banner_part .banner_text {
+    text-align: center;
+    padding-top: 0px;
+    height: 650px;
+  }
+  .banner_part .banner_text h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    line-height: 1.3;
+  }
+}
